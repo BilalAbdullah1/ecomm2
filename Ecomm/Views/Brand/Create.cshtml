@@ -1,0 +1,23 @@
+﻿@model Ecomm.Models.Brand
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add Brand</h4>
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="BName">Brand</label>
+                    <input class="form-control" asp-for="BName" placeholder="Brand Name">
+                    <span asp-validation-for="BName" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Add</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+

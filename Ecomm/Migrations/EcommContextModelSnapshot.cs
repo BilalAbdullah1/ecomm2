@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ecomm.Data;
+using Ecomm.Data;
 
 #nullable disable
 
@@ -20,6 +20,23 @@ namespace Ecomm.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Ecomm.Models.Brand", b =>
+                {
+                    b.Property<int>("Bid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Bid"));
+
+                    b.Property<string>("BName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Bid");
+
+                    b.ToTable("Brands");
+                });
 
             modelBuilder.Entity("ecomm.Models.Category", b =>
                 {

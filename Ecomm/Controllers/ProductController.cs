@@ -34,40 +34,39 @@ namespace Ecomm.Controllers
         {
             try
             {
-                if (image != null && image.Length > 0)
+                if (ModelState.IsValid)
                 {
-                    var fileName = Path.GetFileName(image.FileName);
-                    string imgfolder = Path.Combine(HttpContext.Request.PathBase.Value, "wwwroot/myfiles");
-
-                    if (!Directory.Exists(imgfolder))
+                    if (image != null && image.Length > 0)
                     {
-                        Directory.CreateDirectory(imgfolder);
+                        var fileName = Path.GetFileName(image.FileName);
+                        string imgfolder = Path.Combine(HttpContext.Request.PathBase.Value, "wwwroot/myfiles");
+
+                        if (!Directory.Exists(imgfolder))
+                        {
+                            Directory.CreateDirectory(imgfolder);
+                        }
+
+                        string filePath = Path.Combine(imgfolder, fileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            image.CopyTo(stream);
+                        }
+
+                        string upload = Path.Combine("myfiles", fileName);
+                        prd.PImage = upload;
+
+                        _dbContext.Products.Add(prd);
+                        _dbContext.SaveChanges();
+                        return RedirectToAction("Index");
                     }
-
-                    string filePath = Path.Combine(imgfolder, fileName);
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        image.CopyTo(stream);
-                    }
-
-                    string upload = Path.Combine("myfiles", fileName);
-                    prd.PImage = upload;
-
-                    _dbContext.Products.Add(prd);
-                    _dbContext.SaveChanges();
-                    return RedirectToAction("Index");
                 }
-                //else
-                //{
-                //  //  ViewBag.msg = "Kindly select Product Image";
-                //}
             }
             catch (Exception ex)
             {
                 throw;
             }
-
             return View();  
+
         } 
 
         public IActionResult Delete(int? id)

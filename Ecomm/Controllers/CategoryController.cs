@@ -33,8 +33,9 @@ namespace Ecomm.Controllers
                 {
                     var data = _context.Categories.Add(categories);
                     _context.SaveChanges();
-                }
                     return RedirectToAction("Index");
+                }
+                return View();
             }
             catch (Exception)
             {

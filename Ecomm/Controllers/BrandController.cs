@@ -29,9 +29,14 @@ namespace Ecomm.Controllers
         [HttpPost]
         public IActionResult Create(Brand brnd)
         {
-            var data = _dbContext.Brands.Add(brnd);
-            _dbContext.SaveChanges();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var data = _dbContext.Brands.Add(brnd);
+                _dbContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        
         }
 
         public IActionResult Delete(int? id)
@@ -51,7 +56,6 @@ namespace Ecomm.Controllers
         [HttpPost]
         public IActionResult Edit( Brand brnd)
         {
-       
             _dbContext.Update(brnd);
             _dbContext.SaveChanges();
             return RedirectToAction("Index");

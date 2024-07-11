@@ -97,6 +97,53 @@ namespace Ecomm.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("Ecomm.Models.Role", b =>
+                {
+                    b.Property<int>("RId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RId"));
+
+                    b.Property<string>("RName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RId");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("Ecomm.Models.Users", b =>
+                {
+                    b.Property<int>("Uid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Uid"));
+
+                    b.Property<string>("UEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("URole")
+                        .HasColumnType("int");
+
+                    b.HasKey("Uid");
+
+                    b.HasIndex("URole");
+
+                    b.ToTable("users");
+                });
+
             modelBuilder.Entity("Ecomm.Models.Product", b =>
                 {
                     b.HasOne("Ecomm.Models.Brand", "Brand")
@@ -114,6 +161,17 @@ namespace Ecomm.Migrations
                     b.Navigation("Brand");
 
                     b.Navigation("category");
+                });
+
+            modelBuilder.Entity("Ecomm.Models.Users", b =>
+                {
+                    b.HasOne("Ecomm.Models.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("URole")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 #pragma warning restore 612, 618
         }

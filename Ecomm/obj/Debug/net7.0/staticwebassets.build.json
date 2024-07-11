@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZWp4DvFfG0kA6zGH+bEl1dJQQYO7gibk6bgV7wRGqZA=",
+  "Hash": "hOYwpkN1QzprFPxvEOAppVsAicdtEfjN5YR+mNGbYhQ=",
   "Source": "Ecomm",
   "BasePath": "_content/Ecomm",
   "Mode": "Default",
@@ -2675,6 +2675,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\x-editable.js"
+    },
+    {
+      "Identity": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\wallpaperflare.com_wallpaper.jpg",
+      "SourceId": "Ecomm",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\",
+      "BasePath": "_content/Ecomm",
+      "RelativePath": "myfiles/wallpaperflare.com_wallpaper.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\myfiles\\wallpaperflare.com_wallpaper.jpg"
     },
     {
       "Identity": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\vendors\\ace-builds\\src-min\\ace.js",

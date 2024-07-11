@@ -561,6 +561,10 @@
       "PackagePath": "staticwebassets\\js\\x-editable.js"
     },
     {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\wallpaperflare.com_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\myfiles\\wallpaperflare.com_wallpaper.jpg"
+    },
+    {
       "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\vendors\\ace-builds\\src-min\\ace.js",
       "PackagePath": "staticwebassets\\vendors\\ace-builds\\src-min\\ace.js"
     },

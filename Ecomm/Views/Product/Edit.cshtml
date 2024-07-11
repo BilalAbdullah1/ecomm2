@@ -1,0 +1,64 @@
+﻿@model Ecomm.Models.Product
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add Product</h4>
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <input class="form-control" asp-for="Pid" type="hidden">
+                <div class="form-group">
+                    <label asp-for="Barcode">Barcode</label>
+                    <input class="form-control" asp-for="Barcode" placeholder="Barcode">
+                    <span asp-validation-for="Barcode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PName">Product</label>
+                    <input class="form-control" asp-for="PName" placeholder="Product Name">
+                    <span asp-validation-for="PName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PDescription">Product Description</label>
+                    <input class="form-control" asp-for="PDescription" placeholder="Product Description">
+                    <span asp-validation-for="PDescription" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BId" class="form-label">Brand</label>
+                    <select asp-for="BId" asp-items="ViewBag.Brand" class="form-control">
+                        <option>Select Brand</option>
+                    </select>
+                    <span asp-validation-for="BId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CId" class="form-label">Category</label>
+                    <select asp-for="CId" asp-items="ViewBag.Category" class="form-control">
+                        <option>Select Category</option>
+                    </select>
+                    <span asp-validation-for="CId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PImage" class="form-label"></label>
+                    <input type="file" name="image" class="form-control" />
+                    <span asp-validation-for="PImage" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PPrice">Product Price</label>
+                    <input class="form-control" asp-for="PPrice" placeholder="Product Price">
+                    <span asp-validation-for="PPrice" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Edit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

@@ -3,32 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\ADV\\source\\repos\\ecomm2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\data\\ecommcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\data\\ecommcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240710185500_new column image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ecomm\\Migrations\\20240710185500_new column image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\migrations\\20240710174436_new data table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\migrations\\20240710174436_new data table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\migrations\\20240710182819_datatypechange of price.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\migrations\\20240710182819_datatypechange of price.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\migrations\\20240709184246_new table added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\migrations\\20240709184246_new table added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\data\\ecommcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\data\\ecommcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -39,16 +87,8 @@
       "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\migrations\\20240709181130_database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709175311_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ecomm\\Migrations\\20240709175311_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -81,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\migrations\\20240709181130_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\migrations\\20240709181130_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|c:\\users\\adv\\source\\repos\\ecomm2\\ecomm\\migrations\\20240709184246_new table added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D23D490A-9F87-4416-B8BA-1ED958616118}|Ecomm\\Ecomm.csproj|solutionrelative:ecomm\\migrations\\20240709184246_new table added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 245,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,43 +134,215 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Brand.cs",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Brand.cs",
-              "RelativeDocumentMoniker": "Ecomm\\Models\\Brand.cs",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Brand.cs",
-              "RelativeToolTip": "Ecomm\\Models\\Brand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "20240710185500_new column image.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240710185500_new column image.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240710185500_new column image.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240710185500_new column image.cs",
+              "RelativeToolTip": "Ecomm\\Migrations\\20240710185500_new column image.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T18:36:56.414Z"
+              "WhenOpened": "2024-07-10T18:55:00.523Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Ecomm\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAUwIQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T17:40:11.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Ecomm\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Ecomm\\Views\\Product\\Create.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T17:50:14.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ecomm\\Views\\Brand\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Index.cshtml",
+              "RelativeToolTip": "Ecomm\\Views\\Brand\\Index.cshtml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T18:44:46.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ecomm\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Ecomm\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwDUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T17:45:09.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Ecomm\\Models\\Category.cs",
               "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Category.cs",
               "RelativeToolTip": "Ecomm\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:13:46.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Ecomm\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Ecomm\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAhwCEAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:13:46.591Z"
+              "WhenOpened": "2024-07-09T17:13:46.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Product.cs",
+              "RelativeToolTip": "Ecomm\\Models\\Product.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T17:35:59.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Ecomm\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "Ecomm\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T18:06:13.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240710174436_new data table.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240710174436_new data table.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240710174436_new data table.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240710174436_new data table.cs",
+              "RelativeToolTip": "Ecomm\\Migrations\\20240710174436_new data table.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T17:44:37.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240709184246_new table added.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709184246_new table added.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240709184246_new table added.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709184246_new table added.cs",
+              "RelativeToolTip": "Ecomm\\Migrations\\20240709184246_new table added.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T18:42:46.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Models\\Brand.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Models\\Brand.cs",
+              "RelativeToolTip": "Ecomm\\Models\\Brand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T18:36:56.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240710182819_datatypechange of price.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240710182819_datatypechange of price.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240710182819_datatypechange of price.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240710182819_datatypechange of price.cs",
+              "RelativeToolTip": "Ecomm\\Migrations\\20240710182819_datatypechange of price.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T18:28:19.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Create.cshtml",
+              "RelativeDocumentMoniker": "Ecomm\\Views\\Brand\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Create.cshtml",
+              "RelativeToolTip": "Ecomm\\Views\\Brand\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T19:00:11.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EcommContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Data\\EcommContext.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Data\\EcommContext.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Data\\EcommContext.cs",
+              "RelativeToolTip": "Ecomm\\Data\\EcommContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T17:13:46.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Ecomm\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Ecomm\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAewBcBAACGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T17:13:46.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Controllers\\BrandController.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "Ecomm\\Controllers\\BrandController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T18:35:27.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "Ecomm\\Views\\Category\\Create.cshtml",
@@ -150,56 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Index.cshtml",
-              "RelativeDocumentMoniker": "Ecomm\\Views\\Brand\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Index.cshtml",
-              "RelativeToolTip": "Ecomm\\Views\\Brand\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T18:44:46.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BrandController.cs",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\BrandController.cs",
-              "RelativeDocumentMoniker": "Ecomm\\Controllers\\BrandController.cs",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\BrandController.cs",
-              "RelativeToolTip": "Ecomm\\Controllers\\BrandController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T18:35:27.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EcommContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Data\\EcommContext.cs",
-              "RelativeDocumentMoniker": "Ecomm\\Data\\EcommContext.cs",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Data\\EcommContext.cs",
-              "RelativeToolTip": "Ecomm\\Data\\EcommContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T17:13:46.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Create.cshtml",
-              "RelativeDocumentMoniker": "Ecomm\\Views\\Brand\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Create.cshtml",
-              "RelativeToolTip": "Ecomm\\Views\\Brand\\Create.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T19:00:11.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "Ecomm\\Views\\Category\\Index.cshtml",
@@ -211,7 +366,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Ecomm\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Ecomm\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAhwCEAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T17:13:46.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Category\\Edit.cshtml",
               "RelativeDocumentMoniker": "Ecomm\\Views\\Category\\Edit.cshtml",
@@ -223,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Brand\\Edit.cshtml",
               "RelativeDocumentMoniker": "Ecomm\\Views\\Brand\\Edit.cshtml",
@@ -235,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Ecomm\\Controllers\\HomeController.cs",
@@ -243,11 +410,12 @@
               "RelativeToolTip": "Ecomm\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T19:32:46.22Z"
+              "WhenOpened": "2024-07-09T19:32:46.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Program.cs",
               "RelativeDocumentMoniker": "Ecomm\\Program.cs",
@@ -259,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "20240709181130_database.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709181130_database.Designer.cs",
               "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240709181130_database.Designer.cs",
@@ -271,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "20240709184246_new table added.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709184246_new table added.Designer.cs",
               "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240709184246_new table added.Designer.cs",
@@ -283,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "EcommContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\EcommContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Ecomm\\Migrations\\EcommContextModelSnapshot.cs",
@@ -295,19 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20240709184246_new table added.cs",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709184246_new table added.cs",
-              "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240709184246_new table added.cs",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709184246_new table added.cs",
-              "RelativeToolTip": "Ecomm\\Migrations\\20240709184246_new table added.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T18:42:46.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "20240709175311_update.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709175311_update.cs",
               "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240709175311_update.cs",
@@ -319,19 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Ecomm\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Ecomm\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAUBAAAAAAAAAAAewA4BAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T17:13:46.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "20240709181130_database.cs",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Migrations\\20240709181130_database.cs",
               "RelativeDocumentMoniker": "Ecomm\\Migrations\\20240709181130_database.cs",
@@ -343,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "Ecomm.csproj",
               "DocumentMoniker": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\Ecomm.csproj",
               "RelativeDocumentMoniker": "Ecomm\\Ecomm.csproj",

@@ -4,9 +4,13 @@ using Ecomm.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Build.Framework;
+using System.Net.Mail;
+using System.Net;
 using System.Security.Cryptography;
 using System.Security.Permissions;
 using System.Text;
+using System.Linq;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Ecomm.Controllers
 {
@@ -25,7 +29,7 @@ namespace Ecomm.Controllers
         [HttpGet]
         public IActionResult Registration()
         {
-            ViewBag.Roles = new SelectList (_dbcontext.Roles , "RId", "RName");
+            ViewBag.Roles = new SelectList(_dbcontext.Roles, "RId", "RName");
             return View();
         }
 
@@ -55,7 +59,6 @@ namespace Ecomm.Controllers
             }
             catch (Exception)
             {
-
                 throw;
             }
             return View();
@@ -87,17 +90,114 @@ namespace Ecomm.Controllers
         {
             string dbpass = HashPassword(usr.UPassword);
 
-            var check = _dbcontext.users.Where(x => x.UEmail== usr.UEmail && x.UPassword == dbpass);
+            var check = _dbcontext.users.Where(x => x.UEmail == usr.UEmail && x.UPassword == dbpass);
 
             if (check.Count() > 0)
             {
-
-                return RedirectToAction("Index","Brand");
+                return RedirectToAction("Index", "Brand");
             }
             //else
             //{
             //    ViewBag.msg = "Invalid email/password";
             //}
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ForgetPassword(Users usr)
+        {
+            var data = _dbcontext.users.Where(x => x.UEmail == usr.UEmail).ToList();
+
+            if (data.Count() > 0)
+            {
+                var otp = GenerateOTP();
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+
+                HttpContext.Session.SetString("OTP", otp);
+                HttpContext.Session.SetString("Email", usr.UEmail);
+
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential("bilalabdullah5393@gmail.com", "bqyawuynnpdkhxrl");
+
+                MailMessage msg = new MailMessage("bilalabdullah5393@gmail.com", usr.UEmail);
+                msg.Subject = "OTP";
+                msg.Body = "Your OTP number is " + otp;
+                msg.ReplyTo = new MailAddress(usr.UEmail);
+                client.Send(msg);
+                ViewBag.Message = "Mail sent successfully";
+                return RedirectToAction("SetOTP");
+            }
+            else
+            {
+                ViewBag.Message = "You Entered Wrong Email Please Re-enter Correct Email";
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult SetOTP()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SetOTP(Users usr, string otp)
+        {
+            var sessionOtp = HttpContext.Session.GetString("OTP");
+
+            if (sessionOtp == otp)
+            {
+                ViewBag.Message = "Email Verified Succesfully";
+                return RedirectToAction("PasswordChange");
+            }
+            else
+            {
+                ViewBag.Message = "You Entered Wrong OTP";
+            }
+            return View();
+        }
+
+        private string GenerateOTP(int length = 6)
+        {
+            var random = new Random();
+            var otp = new char[length];
+            for (int i = 0; i < length; i++)
+            {
+                otp[i] = (char)random.Next('0', '9' + 1);
+            }
+            return new string(otp);
+        }
+        [HttpGet]
+        public IActionResult PasswordChange()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult PasswordChange(UsersRegistration usr)
+        {
+            var email = HttpContext.Session.GetString("Email");
+
+            var user = _dbcontext.users.FirstOrDefault(x => x.UEmail == email);
+            if (user != null)
+            {
+                user.UPassword = HashPassword(usr.UPassword);
+                _dbcontext.users.Update(user);
+                _dbcontext.SaveChanges();
+
+                return RedirectToAction("Login");
+            }
+            else
+            {
+                ViewBag.Message = "No Email Found";
+            }
+
             return View();
         }
 

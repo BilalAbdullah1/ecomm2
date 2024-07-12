@@ -21,10 +21,27 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+ builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); 
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true; 
+});
+
+app = builder.Build();
+
+
+app.UseSession();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Category}/{action=Index}/{id?}");
+    pattern: "{controller=Users}/{action=Login}/{id?}");
 
 app.Run();

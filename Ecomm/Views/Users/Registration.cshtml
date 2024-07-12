@@ -11,7 +11,7 @@
                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
                     <div class="auth-form-transparent text-left p-3">
                         <div class="brand-logo">
-                            <img src="../../images/logo.svg" alt="logo">
+                            @*<img src="~/images/logo.svg" alt="logo">*@
                         </div>
                         <h4>New here?</h4>
                         <h6 class="font-weight-light">Join us today! It takes only few steps</h6>
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Password</label>
+                                <label>Confirm Password</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend bg-transparent">
                                         <span class="input-group-text bg-transparent border-right-0">
@@ -62,7 +62,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Country</label>
+                                <label>Roles</label>
                                 <select asp-for="URole" asp-items="@ViewBag.Roles" class="form-control form-control-lg" id="exampleFormControlSelect2">
                                     <option>Select Roles</option>
                              
@@ -72,7 +72,7 @@
                                 <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
                             </div>
                             <div class="text-center mt-4 font-weight-light">
-                                Already have an account? <a href="login.html" class="text-primary">Login</a>
+                                Already have an account? <a asp-action="Login" class="text-primary">Login</a>
                             </div>
                         </form>
                     </div>

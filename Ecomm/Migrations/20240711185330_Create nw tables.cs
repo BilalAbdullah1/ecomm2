@@ -5,7 +5,7 @@
 namespace Ecomm.Migrations
 {
     /// <inheritdoc />
-    public partial class createnew : Migration
+    public partial class Createnwtables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -37,10 +37,24 @@ namespace Ecomm.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Roles",
+                columns: table => new
+                {
+                    RId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    RName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.RId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
-                    Pid = table.Column<int>(type: "int", nullable: false).Annotation("SqlServer:Identity", "1, 1"),
+                    Pid = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Barcode = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -66,6 +80,28 @@ namespace Ecomm.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "users",
+                columns: table => new
+                {
+                    Uid = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    URole = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_users", x => x.Uid);
+                    table.ForeignKey(
+                        name: "FK_users_Roles_URole",
+                        column: x => x.URole,
+                        principalTable: "Roles",
+                        principalColumn: "RId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Products_BId",
                 table: "Products",
@@ -75,6 +111,11 @@ namespace Ecomm.Migrations
                 name: "IX_Products_CId",
                 table: "Products",
                 column: "CId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_users_URole",
+                table: "users",
+                column: "URole");
         }
 
         /// <inheritdoc />
@@ -84,10 +125,16 @@ namespace Ecomm.Migrations
                 name: "Products");
 
             migrationBuilder.DropTable(
+                name: "users");
+
+            migrationBuilder.DropTable(
                 name: "Brands");
 
             migrationBuilder.DropTable(
                 name: "Categories");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
         }
     }
 }

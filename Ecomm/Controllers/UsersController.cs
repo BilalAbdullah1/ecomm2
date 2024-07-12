@@ -2,6 +2,7 @@
 using Ecomm.Models;
 using Ecomm.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Build.Framework;
 using System.Security.Cryptography;
 using System.Security.Permissions;
@@ -21,14 +22,15 @@ namespace Ecomm.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Create()
+        [HttpGet]
+        public IActionResult Registration()
         {
+            ViewBag.Roles = new SelectList (_dbcontext.Roles , "RId", "RName");
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(UsersRegistration usersreg)
+        public IActionResult Registration(UsersRegistration usersreg)
         {
             try
             {
@@ -47,7 +49,7 @@ namespace Ecomm.Controllers
                         };
                         _dbcontext.users.Add(user);
                         _dbcontext.SaveChanges();
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Login");
                     }
                 }
             }
@@ -74,5 +76,30 @@ namespace Ecomm.Controllers
                 return builder.ToString();
             }
         }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(Users usr)
+        {
+            string dbpass = HashPassword(usr.UPassword);
+
+            var check = _dbcontext.users.Where(x => x.UEmail== usr.UEmail && x.UPassword == dbpass);
+
+            if (check.Count() > 0)
+            {
+
+                return RedirectToAction("Index","Brand");
+            }
+            //else
+            //{
+            //    ViewBag.msg = "Invalid email/password";
+            //}
+            return View();
+        }
+
     }
 }

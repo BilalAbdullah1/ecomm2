@@ -12,6 +12,8 @@ namespace Ecomm.ViewModels
         public string UEmail { get; set; }
         [Required]
         public string UPassword { get; set; }
+        [Compare("UPassword")]
+        public string ConfirmPassword {  get; set; }
         [Required]
         public int URole { get; set; }
     }

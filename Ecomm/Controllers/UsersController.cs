@@ -21,6 +21,7 @@ namespace Ecomm.Controllers
         {
             _dbcontext = new EcommContext();
         }
+
         public IActionResult Index()
         {
             return View();
@@ -56,6 +57,12 @@ namespace Ecomm.Controllers
                         return RedirectToAction("Login");
                     }
                 }
+                else
+                {
+                    ViewBag.msg = "User Password And Confirm Password not match";
+                    ViewBag.Roles = new SelectList(_dbcontext.Roles, "RId", "RName");
+                    return View("Registration");
+                }
             }
             catch (Exception)
             {
@@ -79,6 +86,7 @@ namespace Ecomm.Controllers
                 return builder.ToString();
             }
         }
+
         [HttpGet]
         public IActionResult Login()
         {
@@ -86,20 +94,19 @@ namespace Ecomm.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(Users usr)
+        public IActionResult Login(UserLogin usr)
         {
-            string dbpass = HashPassword(usr.UPassword);
-
-            var check = _dbcontext.users.Where(x => x.UEmail == usr.UEmail && x.UPassword == dbpass);
-
-            if (check.Count() > 0)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index", "Brand");
+                string dbpass = HashPassword(usr.UPassword);
+
+                var check = _dbcontext.users.Where(x => x.UEmail == usr.UEmail && x.UPassword == dbpass);
+
+                if (check.Count() > 0)
+                {
+                    return RedirectToAction("Index", "Brand");
+                }
             }
-            //else
-            //{
-            //    ViewBag.msg = "Invalid email/password";
-            //}
             return View();
         }
 
@@ -174,18 +181,20 @@ namespace Ecomm.Controllers
             }
             return new string(otp);
         }
+
         [HttpGet]
         public IActionResult PasswordChange()
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult PasswordChange(UsersRegistration usr)
         {
             var email = HttpContext.Session.GetString("Email");
 
             var user = _dbcontext.users.FirstOrDefault(x => x.UEmail == email);
-            if (user != null)
+            if (user != null && usr.UPassword == usr.ConfirmPassword)
             {
                 user.UPassword = HashPassword(usr.UPassword);
                 _dbcontext.users.Update(user);
@@ -195,10 +204,9 @@ namespace Ecomm.Controllers
             }
             else
             {
-                ViewBag.Message = "No Email Found";
+                ViewBag.msg = "User Password And Confirm Password not match";
+                return View();
             }
-
-            return View();
         }
 
     }

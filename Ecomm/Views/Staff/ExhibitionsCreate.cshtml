@@ -1,0 +1,45 @@
+﻿@model Ecomm.Models.Exhibitions
+@{
+    ViewData["Title"] = "ExhibitionsCreate";
+    Layout = "~/Views/Shared/_Staff.cshtml";
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add Exhibtions</h4>
+            <form asp-action="ExhibitionsCreate" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="ExbTitle"> Title</label>
+                    <input type="text" class="form-control" asp-for="ExbTitle" placeholder="Title">
+                    <span asp-validation-for="ExbTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Location">Location</label>
+                    <input type="text" class="form-control" asp-for="Location" placeholder="Location">
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ExbDescription">Exhibition Details</label>
+                    <textarea cols="6" rows="6" class="form-control" asp-for="ExbDescription" placeholder="Exhibition Details"></textarea>
+                    <span asp-validation-for="ExbDescription" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="startdate">Start Date</label>
+                    <input class="form-control" asp-for="startdate" placeholder="Start Date">
+                    <span asp-validation-for="startdate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="enddate">End Date</label>
+                    <input class="form-control" asp-for="enddate" placeholder="End Date">
+                    <span asp-validation-for="enddate" class="text-danger"></span>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <a class="btn btn-light" asp-action="Exhibitions" asp-controller="Staff">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+

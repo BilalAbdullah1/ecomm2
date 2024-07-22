@@ -565,8 +565,36 @@
       "PackagePath": "staticwebassets\\js\\x-editable.js"
     },
     {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\1.jpeg",
+      "PackagePath": "staticwebassets\\myfiles\\1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\1049584.jpg",
+      "PackagePath": "staticwebassets\\myfiles\\1049584.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\122.jpg",
+      "PackagePath": "staticwebassets\\myfiles\\122.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\1917480.jpg",
+      "PackagePath": "staticwebassets\\myfiles\\1917480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\2203871.jpg",
+      "PackagePath": "staticwebassets\\myfiles\\2203871.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\23131.png",
+      "PackagePath": "staticwebassets\\myfiles\\23131.png"
+    },
+    {
       "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\Screenshot (1).png",
       "PackagePath": "staticwebassets\\myfiles\\Screenshot (1).png"
+    },
+    {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\peakpx (1).jpg",
+      "PackagePath": "staticwebassets\\myfiles\\peakpx (1).jpg"
     },
     {
       "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\peakpx.jpg",
@@ -575,6 +603,10 @@
     {
       "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\wallpaperflare.com_wallpaper.jpg",
       "PackagePath": "staticwebassets\\myfiles\\wallpaperflare.com_wallpaper.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\myfiles\\wp13522662-demon-slayer-2024-wallpapers.jpg",
+      "PackagePath": "staticwebassets\\myfiles\\wp13522662-demon-slayer-2024-wallpapers.jpg"
     },
     {
       "Id": "C:\\Users\\ADV\\source\\repos\\ecomm2\\Ecomm\\wwwroot\\vendors\\ace-builds\\src-min\\ace.js",

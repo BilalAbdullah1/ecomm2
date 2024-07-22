@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Ecomm.Models.ExhibitionSubmissions>
+@{
+    ViewData["Title"] = "ExhibitionSubmissions";
+    Layout = "~/Views/Shared/_Staff.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">
+            Exhibition Submissions 
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data table</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            @* <h4 class="card-title">Data table</h4> *@
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table id="order-listing" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Exhibtions Submission Id </th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Sold Price</th>
+                                    <th>Customer Detail</th>
+                                    <th>Payment Status</th>
+                                    <th>Exhibition</th>
+                                    <th>Submission</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.ExhibitionSubmissionID</td>
+                                        <td>@item.Price</td>
+                                        <td>@item.Status</td>
+                                        <td>@item.SoldPrice</td>
+                                        <td>@item.CustomerDetails</td>
+                                        <td>@item.PaymentStatus</td>
+                                        <td>@item.Exhibition.ExbTitle</td>
+                                        <td>@item.Submission.Description</td>
+
+                                        @*   <td>
+                                    <label class="badge badge-info">On hold</label>
+                                    </td>*@
+                                        <td>
+                                            <a class="btn btn-primary" asp-action="ExhibitionSubmissionsEdit" asp-route-id="@item.ExhibitionSubmissionID">Edit</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-outline-danger" asp-action="ExhibitionSubmissionsDelete" asp-route-id="@item.ExhibitionSubmissionID">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <br />
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn btn-outline-primary " asp-action="ExhibitionSubmissionsCreate"> Create </a>
+            </div>
+        </div>
+
+
+    </div>
+</div>

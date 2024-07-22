@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Ecomm.Models.Competitions>
+@{
+    ViewData["Title"] = "Competition";
+    Layout = "~/Views/Shared/_Staff.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">
+            Category
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data table</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            @* <h4 class="card-title">Data table</h4> *@
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table id="order-listing" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Competition Id </th>
+                                    <th>Title </th>
+                                    <th>StartDate</th>
+                                    <th>EndDate </th>
+                                    <th>AwardDetails </th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.CopetitionId</td>
+                                        <td>@item.Title</td>
+                                        <td>@item.CompStartDate</td>
+                                        <td>@item.CompEndDate</td>
+                                        <td>@item.AwardDetails</td>
+
+                                        @*   <td>
+                                    <label class="badge badge-info">On hold</label>
+                                    </td>*@
+                                        <td>
+                                            <a class="btn btn-primary" asp-action="CompetitionEdit" asp-route-id="@item.CopetitionId">Edit</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-outline-danger" asp-action="CompetitionDelete" asp-route-id="@item.CopetitionId">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <br />
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn btn-outline-primary " asp-action="CompetitionCreate"> Create </a>
+            </div>
+        </div>
+
+
+    </div>
+</div>

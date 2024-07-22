@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Ecomm.Models.Submissions>
+@{
+    ViewData["Title"] = "Submissions";
+    Layout = "~/Views/Shared/_Staff.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">
+            Submissions
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data table</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            @* <h4 class="card-title">Data table</h4> *@
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table id="order-listing" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Exhibtions Id </th>
+                                    <th>Student Name</th>
+                                    <th>Competition</th>
+                                    <th>Description</th>
+                                    <th>Submission Date</th>
+                                    <th>StaffRemarks </th>
+                                    <th>Image</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.SubId</td>
+                                        <td>@item.Student.StdFirstName</td>
+                                        <td>@item.Competitions.Title</td>
+                                        <td>@item.Description</td>
+                                        <td>@item.SubmissionDate.ToShortDateString()</td>
+                                        <td>@item.StaffRemarks</td>
+                                        <td>
+                                            <img src="~/@Url.Content(@item.File)"
+                                                 width="100px" height="100px" />
+                                        </td>
+
+                                        @*   <td>
+                                    <label class="badge badge-info">On hold</label>
+                                    </td>*@
+                                        <td>
+                                            <a class="btn btn-primary" asp-action="SubmissionsEdit" asp-route-id="@item.SubId">Edit</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-outline-danger" asp-action="SubmissionsDelete" asp-route-id="@item.SubId">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <br />
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn btn-outline-primary " asp-action="SubmissionsCreate"> Create </a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

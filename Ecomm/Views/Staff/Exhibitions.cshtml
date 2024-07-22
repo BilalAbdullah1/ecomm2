@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Ecomm.Models.Exhibitions>
+@{
+    ViewData["Title"] = "Exhibitions";
+    Layout = "~/Views/Shared/_Staff.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">
+             Exhibitions
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data table</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            @* <h4 class="card-title">Data table</h4> *@
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table id="order-listing" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Exhibtions Id </th>
+                                    <th>Title </th>
+                                    <th>Description</th>
+                                    <th>Stard Date </th>
+                                    <th>EndDate </th>
+                                    <th>Location</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.ExbId</td>
+                                        <td>@item.ExbTitle</td>
+                                        <td>@item.ExbDescription</td>
+                                        <td>@item.startdate.ToShortDateString()</td>
+                                        <td>@item.enddate.ToShortDateString()</td>
+                                        <td>@item.Location</td>
+
+                                        @*   <td>
+                                    <label class="badge badge-info">On hold</label>
+                                    </td>*@
+                                        <td>
+                                            <a class="btn btn-primary" asp-action="ExhibitionsEdit" asp-route-id="@item.ExbId">Edit</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-outline-danger" asp-action="ExhibitionsDelete" asp-route-id="@item.ExbId">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <br />
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn btn-outline-primary " asp-action="ExhibitionsCreate"> Create </a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

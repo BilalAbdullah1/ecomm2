@@ -1,0 +1,65 @@
+﻿@model Ecomm.Models.ExhibitionSubmissions
+@{
+    ViewData["Title"] = "ExhibitionSubmissionsCreate";
+    Layout = "~/Views/Shared/_Staff.cshtml";
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add Exhibition Submission</h4>
+            <form asp-action="ExhibitionSubmissionsCreate" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="Price">Price</label>
+                    <input class="form-control" asp-for="Price" placeholder="Price">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SoldPrice">Sold Price</label>
+                    <input class="form-control" asp-for="SoldPrice" placeholder="Sold Price">
+                    <span asp-validation-for="SoldPrice" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CustomerDetails">Customer Details</label>
+                    <input class="form-control" asp-for="CustomerDetails" placeholder="Customer Details">
+                    <span asp-validation-for="CustomerDetails" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="form-label">Status</label>
+                    <select asp-for="Status" class="form-control">
+                        <option>Select Status</option>
+                        <option>Not Sold</option>
+                        <option>Sold</option>
+                    </select>
+                    <span asp-validation-for="SubmissionID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PaymentStatus" class="form-label">Payment Status</label>
+                    <select asp-for="PaymentStatus" class="form-control">
+                        <option>Select Payment</option>
+                        <option>Unpaid</option>
+                        <option>Paid</option>
+                    </select>
+                    <span asp-validation-for="PaymentStatus" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SubmissionID" class="form-label">Submission</label>
+                    <select asp-for="SubmissionID" asp-items="ViewBag.Submission" class="form-control">
+                        <option>Select Submission</option>
+                    </select>
+                    <span asp-validation-for="SubmissionID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ExhibitionID" class="form-label">Exhibition</label>
+                    <select asp-for="ExhibitionID" asp-items="ViewBag.Exhibition" class="form-control">
+                        <option>Select Exhibition</option>
+                    </select>
+                    <span asp-validation-for="ExhibitionID" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <a class="btn btn-light" asp-action="ExhibitionSubmissions" asp-controller="Staff">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+
